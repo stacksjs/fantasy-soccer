@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fantasy Football - Soccer Fantasy League</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     module.exports = {
       // Team Data
@@ -22,31 +21,31 @@
       hasTripleCaptain: false,
       hasFreeHit: true,
 
-      // Squad Data with Transfermarkt player images
+      // Squad Data with local player images
       goalkeepers: [
-        { id: 1, name: "Alisson", team: "Liverpool", points: 72, price: 5.5, form: "6.2", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/105470-1670254746.jpg" }
+        { id: "105470", name: "Alisson", team: "Liverpool", points: 72, price: 20, form: "6.2", isCaptain: false, isVice: false, img: "/public/images/players/liverpool-fc/alisson.jpg" }
       ],
       defenders: [
-        { id: 2, name: "Alexander-Arnold", team: "Liverpool", points: 89, price: 7.8, form: "7.4", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/314353-1682683695.jpg" },
-        { id: 3, name: "Van Dijk", team: "Liverpool", points: 78, price: 6.5, form: "6.8", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/139208-1695021451.jpg" },
-        { id: 4, name: "Saliba", team: "Arsenal", points: 82, price: 5.8, form: "7.1", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/495666-1694590721.jpg" },
-        { id: 5, name: "Trippier", team: "Newcastle", points: 95, price: 6.2, form: "7.9", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/95810-1695021596.jpg" }
+        { id: "624258", name: "Conor Bradley", team: "Liverpool", points: 89, price: 30, form: "7.4", isCaptain: false, isVice: false, img: "/public/images/players/liverpool-fc/conor-bradley-conor-bradley.jpg" },
+        { id: "139208", name: "Virgil van Dijk", team: "Liverpool", points: 78, price: 23, form: "6.8", isCaptain: false, isVice: false, img: "/public/images/players/liverpool-fc/virgil-van-dijk-virgil-van-dijk.jpg" },
+        { id: "495666", name: "William Saliba", team: "Arsenal", points: 82, price: 80, form: "7.1", isCaptain: false, isVice: false, img: "/public/images/players/fc-arsenal/william-saliba-william-saliba.jpg" },
+        { id: "95810", name: "Kieran Trippier", team: "Newcastle", points: 95, price: 4, form: "7.9", isCaptain: false, isVice: false, img: "/public/images/players/newcastle-united/kieran-trippier-kieran-trippier.jpg" }
       ],
       midfielders: [
-        { id: 6, name: "Salah", team: "Liverpool", points: 124, price: 12.8, form: "8.8", isCaptain: true, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/148455-1682683690.jpg" },
-        { id: 7, name: "Saka", team: "Arsenal", points: 98, price: 9.2, form: "7.9", isCaptain: false, isVice: true, img: "https://img.a.transfermarkt.technology/portrait/header/433177-1694590751.jpg" },
-        { id: 8, name: "Odegaard", team: "Arsenal", points: 87, price: 8.4, form: "7.2", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/316264-1694590743.jpg" }
+        { id: "148455", name: "Mohamed Salah", team: "Liverpool", points: 124, price: 45, form: "8.8", isCaptain: true, isVice: false, img: "/public/images/players/liverpool-fc/mohamed-salah.jpg" },
+        { id: "433177", name: "Bukayo Saka", team: "Arsenal", points: 98, price: 140, form: "7.9", isCaptain: false, isVice: true, img: "/public/images/players/fc-arsenal/bukayo-saka.jpg" },
+        { id: "316264", name: "Martin Ødegaard", team: "Arsenal", points: 87, price: 80, form: "7.2", isCaptain: false, isVice: false, img: "/public/images/players/fc-arsenal/martin-degaard-martin-degaard.jpg" }
       ],
       forwards: [
-        { id: 9, name: "Haaland", team: "Man City", points: 156, price: 14.2, form: "9.2", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/418560-1695029616.jpg" },
-        { id: 10, name: "Watkins", team: "Aston Villa", points: 92, price: 8.8, form: "7.6", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/299420-1695021614.jpg" },
-        { id: 11, name: "Isak", team: "Newcastle", points: 88, price: 8.5, form: "7.3", isCaptain: false, isVice: false, img: "https://img.a.transfermarkt.technology/portrait/header/435338-1695021570.jpg" }
+        { id: "418560", name: "Erling Haaland", team: "Man City", points: 156, price: 180, form: "9.2", isCaptain: false, isVice: false, img: "/public/images/players/manchester-city/erling-haaland.jpg" },
+        { id: "324358", name: "Ollie Watkins", team: "Aston Villa", points: 92, price: 35, form: "7.6", isCaptain: false, isVice: false, img: "/public/images/players/aston-villa/ollie-watkins.jpg" },
+        { id: "349066", name: "Alexander Isak", team: "Liverpool", points: 88, price: 140, form: "7.3", isCaptain: false, isVice: false, img: "/public/images/players/liverpool-fc/alexander-isak.jpg" }
       ],
       bench: [
-        { id: 12, name: "Raya", team: "Arsenal", points: 65, price: 5.0, position: "GK", img: "https://img.a.transfermarkt.technology/portrait/header/262605-1694590713.jpg" },
-        { id: 13, name: "Gabriel", team: "Arsenal", points: 71, price: 5.2, position: "DEF", img: "https://img.a.transfermarkt.technology/portrait/header/544659-1694590729.jpg" },
-        { id: 14, name: "Mac Allister", team: "Liverpool", points: 76, price: 6.8, position: "MID", img: "https://img.a.transfermarkt.technology/portrait/header/534027-1695021478.jpg" },
-        { id: 15, name: "Solanke", team: "Tottenham", points: 54, price: 7.2, position: "FWD", img: "https://img.a.transfermarkt.technology/portrait/header/258878-1724934015.jpg" }
+        { id: "262749", name: "David Raya", team: "Arsenal", points: 65, price: 40, position: "GK", img: "/public/images/players/fc-arsenal/david-raya.jpg" },
+        { id: "435338", name: "Gabriel Magalhães", team: "Arsenal", points: 71, price: 75, position: "DEF", img: "/public/images/players/fc-arsenal/gabriel-magalhaes-gabriel-magalhaes.jpg" },
+        { id: "534033", name: "Alexis Mac Allister", team: "Liverpool", points: 76, price: 100, position: "MID", img: "/public/images/players/liverpool-fc/alexis-mac-allister.jpg" },
+        { id: "378710", name: "Richarlison", team: "Tottenham", points: 54, price: 35, position: "FWD", img: "/public/images/players/tottenham-hotspur/richarlison.jpg" }
       ],
 
       // Transfer Market Data
